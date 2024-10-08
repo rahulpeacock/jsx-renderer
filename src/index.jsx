@@ -28,7 +28,16 @@ function render(vnode) {
 }
 
 // JSX -> VDOM:
-const vdom = <div id='foo'>Hello JSX Renderer!</div>;
+const vdom = (
+  <div id='foo'>
+    <div>
+      <p>Hello JSX Renderer!</p>
+    </div>
+    <div>
+      <span>This is second child</span>
+    </div>
+  </div>
+);
 console.log(vdom);
 
 // VDOM -> DOM:
